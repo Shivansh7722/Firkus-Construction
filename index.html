@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firkus Construction | Sioux Falls Exterior Remodeling Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'firkus-red': '#e30613',
+                        'firkus-dark': '#1a1a1a',
+                    },
+                    fontFamily: {
+                        'sans': ['"Barlow"', 'sans-serif'],
+                        'heading': ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap');
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(227, 6, 19, 0.85), rgba(227, 6, 19, 0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .before-after-slider {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+        
+        .sticky-call {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-call {
+                display: block;
+            }
+            .hero-bg {
+                background-position: 65% center;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-firkus-dark">
+    <!-- Top Contact Bar -->
+    <div class="bg-firkus-red text-white py-3 px-4">
+        <div class="container mx-auto flex justify-center md:justify-between items-center">
+            <div class="hidden md:block font-heading font-bold text-lg">
+                <span>BUILDING EXCELLENCE • TRANSFORMING COMMUNITIES</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="tel:7153260121" class="flex items-center hover:text-gray-200 transition transform hover:scale-105">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span class="font-bold">(715) 326-0121</span>
+                </a>
+                <a href="mailto:firkusconstruction@gmail.com" class="hidden md:flex items-center hover:text-gray-200 transition transform hover:scale-105">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span class="font-bold">firkusconstruction@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-heading font-bold text-firkus-red">
+                    FIRKUS <span class="text-firkus-dark">CONSTRUCTION</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="font-medium hover:text-firkus-red transition">About</a>
+                <a href="#services" class="font-medium hover:text-firkus-red transition">Services</a>
+                <a href="#why-us" class="font-medium hover:text-firkus-red transition">Why Choose Us</a>
+                <a href="#portfolio" class="font-medium hover:text-firkus-red transition">Portfolio</a>
+                <a href="#contact" class="font-medium hover:text-firkus-red transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-firkus-red">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#about" class="block py-2 hover:text-firkus-red">About</a>
+            <a href="#services" class="block py-2 hover:text-firkus-red">Services</a>
+            <a href="#why-us" class="block py-2 hover:text-firkus-red">Why Choose Us</a>
+            <a href="#portfolio" class="block py-2 hover:text-firkus-red">Portfolio</a>
+            <a href="#contact" class="block py-2 hover:text-firkus-red">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 md:py-40 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-firkus-red/90 to-firkus-dark/80 z-0"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                
+                <h1 class="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 uppercase leading-tight">
+                    Sioux Falls <span class="text-white">Trusted Partner for</span><br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">Exterior Excellence</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-medium">
+                    Premium exterior solutions that elevate properties and empower business growth
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="inline-block bg-white text-firkus-red font-bold py-4 px-10 rounded-md text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        GET YOUR FREE QUOTE →
+                    </a>
+                    <a href="#portfolio" class="inline-block border-2 border-white text-white font-bold py-3.5 px-10 rounded-md text-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+                        SEE OUR WORK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="font-heading font-bold text-4xl md:text-5xl mb-8 text-firkus-red">
+                        BUILDING A LEGACY IN SIOUX FALLS
+                    </h2>
+                    <p class="text-xl mb-6 font-medium">
+                        At Firkus Construction, we're not just contractors - we're <span class="font-bold">visionaries transforming the Sioux Falls landscape</span>. Every project we undertake is an opportunity to showcase our relentless commitment to excellence.
+                    </p>
+                    <p class="text-xl mb-6 font-medium">
+                        Our team of <span class="font-bold">elite professionals</span> operates with military precision, combining premium materials with innovative techniques to deliver results that exceed expectations and <span class="font-bold">set new industry standards</span>.
+                    </p>
+                    <p class="text-xl font-medium">
+                        From roofing to demolition, we treat each client's property as if it were our own - because in this business, <span class="font-bold">our reputation is built one satisfied customer at a time</span>.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div class="bg-firkus-red/10 px-6 py-3 rounded-lg border-l-4 border-firkus-red">
+                            <p class="font-bold text-lg">150+</p>
+                            <p class="text-sm">Projects Completed</p>
+                        </div>
+                        <div class="bg-firkus-red/10 px-6 py-3 rounded-lg border-l-4 border-firkus-red">
+                            <p class="font-bold text-lg">100%</p>
+                            <p class="text-sm">Client Satisfaction</p>
+                        </div>
+                        <div class="bg-firkus-red/10 px-6 py-3 rounded-lg border-l-4 border-firkus-red">
+                            <p class="font-bold text-lg">24/7</p>
+                            <p class="text-sm">Emergency Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Firkus Construction team working on a roof" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading font-bold text-3xl md:text-4xl mb-12 text-center text-firkus-red">
+                Our Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1635424709961-f3a150459ad4?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Roofing service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-2xl mb-3 text-firkus-red">Roofing</h3>
+                        <p class="mb-4">
+                            Expert roof installation, repair, and replacement using premium materials to protect your home from the elements.
+                        </p>
+                        <a href="#contact" class="text-firkus-red font-semibold hover:underline">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1612451850869-87c3c039c72e?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Siding service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-2xl mb-3 text-firkus-red">Siding</h3>
+                        <p class="mb-4">
+                            Beautiful, durable siding options to enhance your home's curb appeal and protect against harsh weather conditions.
+                        </p>
+                        <a href="#contact" class="text-firkus-red font-semibold hover:underline">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1569898773055-2f2b6e97e1ed?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Gutters service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-2xl mb-3 text-firkus-red">Gutters</h3>
+                        <p class="mb-4">
+                            Professional gutter installation and repair to protect your home's foundation and prevent water damage.
+                        </p>
+                        <a href="#contact" class="text-firkus-red font-semibold hover:underline">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1636121156235-6bc6757e49ee?q=80&w=1256&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Demolition service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-2xl mb-3 text-firkus-red">Demolition</h3>
+                        <p class="mb-4">
+                            Safe, efficient demolition services for residential and commercial properties, with complete site cleanup.
+                        </p>
+                        <a href="#contact" class="text-firkus-red font-semibold hover:underline">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1584786454449-ecc77738684c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Junk removal service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-2xl mb-3 text-firkus-red">Junk Removal</h3>
+                        <p class="mb-4">
+                            Fast, reliable junk removal services to keep your property clean and clutter-free after projects or cleanouts.
+                        </p>
+                        <a href="#contact" class="text-firkus-red font-semibold hover:underline">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-16 md:py-24 bg-firkus-red text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading font-bold text-3xl md:text-4xl mb-12 text-center">
+                Why Choose Firkus Construction
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white rounded-full p-4 mb-4 text-firkus-red">
+                        <i class="fas fa-home text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Residential & Commercial</h3>
+                    <p>We serve both homeowners and businesses with the same high standards of quality.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white rounded-full p-4 mb-4 text-firkus-red">
+                        <i class="fas fa-clock text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Fast & Reliable</h3>
+                    <p>We respect your time and complete projects efficiently without compromising quality.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white rounded-full p-4 mb-4 text-firkus-red">
+                        <i class="fas fa-tools text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Expert Craftsmanship</h3>
+                    <p>Our skilled professionals deliver superior results that stand the test of time.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white rounded-full p-4 mb-4 text-firkus-red">
+                        <i class="fas fa-map-marker-alt text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Locally Owned</h3>
+                    <p>We're proud to serve Sioux Falls and surrounding areas as a local business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading font-bold text-3xl md:text-4xl mb-12 text-center text-firkus-red">
+                Our Work
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="before-after-slider rounded-lg overflow-hidden shadow-lg" 
+                     style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="bg-black bg-opacity-50 h-full flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-heading font-bold text-xl">Siding Replacement</h3>
+                            <p class="text-gray-200">Sioux Falls Residence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="before-after-slider rounded-lg overflow-hidden shadow-lg" 
+                     style="background-image: url('https://images.unsplash.com/photo-1625602812206-5ec545ca1231?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="bg-black bg-opacity-50 h-full flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-heading font-bold text-xl">Roof Installation</h3>
+                            <p class="text-gray-200">Commercial Property</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="before-after-slider rounded-lg overflow-hidden shadow-lg" 
+                     style="background-image: url('https://images.unsplash.com/photo-1621979143420-8f5a8a7f1a1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                    <div class="bg-black bg-opacity-50 h-full flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-heading font-bold text-xl">Gutter System</h3>
+                            <p class="text-gray-200">Historic Home Renovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-firkus-red text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-red-700 transition duration-300">
+                    View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="bg-gradient-to-r from-firkus-dark to-firkus-red text-white py-10 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://grainy-gradients.vercel.app/noise.svg');"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="font-heading font-bold text-3xl md:text-4xl mb-4">
+                    READY TO ELEVATE YOUR PROPERTY?
+                </h3>
+                <p class="text-xl mb-6 max-w-2xl mx-auto">
+                    Limited availability - book your consultation today and join our roster of satisfied clients
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:7153260121" class="inline-block bg-white text-firkus-red font-bold py-4 px-10 rounded-md text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        CALL NOW: (715) 326-0121
+                    </a>
+                    <a href="#contact" class="inline-block border-2 border-white text-white font-bold py-3.5 px-10 rounded-md text-lg hover:bg-white/10 transition-all duration-300">
+                        EMAIL US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6 text-firkus-red">
+                        Contact Us
+                    </h2>
+                    <p class="text-lg mb-6">
+                        Ready to start your project? Fill out the form and we'll get back to you within 24 hours.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-firkus-red mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <a href="tel:7153260121" class="hover:underline">(715) 326-0121</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-firkus-red mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:firkusconstruction@gmail.com" class="hover:underline">firkusconstruction@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-firkus-red mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Service Area</h4>
+                                <p>Sioux Falls and surrounding areas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold text-lg mb-3">Business Hours</h4>
+                        <p>Monday - Friday: 7:00 AM - 5:00 PM</p>
+                        <p>Saturday: By appointment</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="name">
+                                Name
+                            </label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-firkus-red" 
+                                   id="name" type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="email">
+                                Email
+                            </label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-firkus-red" 
+                                   id="email" type="email" placeholder="Your email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="phone">
+                                Phone
+                            </label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-firkus-red" 
+                                   id="phone" type="tel" placeholder="Your phone number" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="service">
+                                Service Needed
+                            </label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-firkus-red" 
+                                    id="service" required>
+                                <option value="">Select a service</option>
+                                <option value="roofing">Roofing</option>
+                                <option value="siding">Siding</option>
+                                <option value="gutters">Gutters</option>
+                                <option value="demolition">Demolition</option>
+                                <option value="junk-removal">Junk Removal</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="message">
+                                Message
+                            </label>
+                            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-firkus-red" 
+                                      id="message" rows="4" placeholder="Tell us about your project"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-firkus-red text-white font-bold py-3 px-4 rounded-md hover:bg-red-700 transition duration-300">
+                            Get Your Free Estimate
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-20 bg-firkus-dark text-white">
+        <div class="container mx-auto px-4 text-center max-w-5xl">
+            <h2 class="font-heading font-bold text-4xl md:text-5xl mb-8">
+                OUR MISSION: <span class="text-firkus-red">EXCELLENCE IN EVERY DETAIL</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-12 leading-relaxed">
+                At Firkus Construction, we don't just build structures - we build <span class="font-bold">trust, relationships, and legacies</span>. Our commitment to superior craftsmanship and client satisfaction isn't just a promise, it's the foundation of everything we do.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-firkus-red/10 p-6 rounded-xl border border-firkus-red/30">
+                    <h3 class="font-heading font-bold text-2xl mb-3">Vision</h3>
+                    <p>To be Sioux Falls' most trusted name in exterior construction through relentless innovation and quality.</p>
+                </div>
+                <div class="bg-firkus-red/10 p-6 rounded-xl border border-firkus-red/30">
+                    <h3 class="font-heading font-bold text-2xl mb-3">Values</h3>
+                    <p>Integrity, craftsmanship, accountability, and passion in every project we undertake.</p>
+                </div>
+                <div class="bg-firkus-red/10 p-6 rounded-xl border border-firkus-red/30">
+                    <h3 class="font-heading font-bold text-2xl mb-3">Promise</h3>
+                    <p>To deliver results that exceed expectations and stand the test of time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.091144048595!2d-96.7006239245377!3d43.59502297110205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eac8c9f3e2b07%3A0x4d0c0a5d5f3b5e1e!2sSioux%20Falls%2C%20SD!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-firkus-red text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Firkus Construction</h3>
+                    <p class="mb-4">
+                        Sioux Falls’
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                         Trusted Partner for Exterior Excellence
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-200">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-200">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-200">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:underline">About Us</a></li>
+                        <li><a href="#services" class="hover:underline">Services</a></li>
+                        <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Roofing</a></li>
+                        <li><a href="#" class="hover:underline">Siding</a></li>
+                        <li><a href="#" class="hover:underline">Gutters</a></li>
+                        <li><a href="#" class="hover:underline">Demolition</a></li>
+                        <li><a href="#" class="hover:underline">Junk Removal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2"></i>
+                            <a href="tel:7153260121" class="hover:underline">(715) 326-0121</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <a href="mailto:firkusconstruction@gmail.com" class="hover:underline">firkusconstruction@gmail.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>Sioux Falls, SD</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-red-300 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Firkus Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Call Button (Mobile) -->
+    <a href="tel:7153260121" class="sticky-call bg-firkus-red text-white rounded-full p-4 shadow-lg hover:bg-red-700 transition">
+        <i class="fas fa-phone-alt text-xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will contact you shortly.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
